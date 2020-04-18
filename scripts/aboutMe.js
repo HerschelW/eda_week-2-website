@@ -26,7 +26,8 @@ var fullName = firstName + " " + lastName;
 // 4 - Console log the value of `fullName`
 log(fullName);
 
-//document.write(fullName);
+//document.write(fullName); had this prior to making the 'log' function at the top. My spidey senses
+//started shouting "MAKE A FUNCTION YOU FOOL!"
 
 // 5 - Create a variable called `age` and assign it the value of your age
 var age = 31;
@@ -49,14 +50,14 @@ var pets = 1;
 var friendsPets = 0;
 
 // 11 - Add two pets to your `pets` variable
-var pets = pets + 2;
+pets += 2;
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 3;
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
-if (pets === true) {
+if (adventurous === true) {
    log("Adventures are great!");
 } else {
    log("How about we stay home? (Quarantine and all)");
@@ -92,9 +93,9 @@ if (pets < allowedPets) {
 // If `friendsPets` is greater than `pets`, assign the value of the `friendsPets`
 // variable to `mostPets`. Console log the value of `mostPets`.
 if (pets > friendsPets) {
-   mostPets = pets;
+   var mostPets = pets;
 } else {
-   mostPets = friendsPets;
+   var mostPets = friendsPets;
 }
 log(mostPets);
 
@@ -183,6 +184,7 @@ log(
    "'Absurd Reality' starring Kent Worthington as himself, based on a story so improbable that it never happened. Not because of aliens, but because the physics behind a collar spinning at 100k revolutions per minute are beyond the limitations of reality."
 );
 
+//Matrix Rain
 var _0x5f15 = [
    "fillText",
    "fillRect",
